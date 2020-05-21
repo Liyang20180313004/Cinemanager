@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/activity_cinema_content_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginRight="@dimen/screen_margin"
+        android:background="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="5dp" />
+
+    <TextView
+        android:id="@+id/activity_cinema_tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/txt_no_date"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/txt_empty_hint_size" />
+
+    <include
+        android:id="@+id/activity_cinema_content_add"
+        layout="@layout/dialog_add_cinema"
+        android:visibility="gone" />
+
+</FrameLayout>

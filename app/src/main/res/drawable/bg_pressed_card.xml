@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/bg_card_elevation" android:left="@dimen/bg_card_elevation">
+        <shape android:shape="rectangle" android:dither="true">
+            <corners android:radius="@dimen/bg_card_radius"/>
+            <solid android:color="@android:color/white"/>
+        </shape>
+    </item>
+
+    <item android:bottom="@dimen/bg_card_elevation" android:right="@dimen/bg_card_elevation">
+        <shape android:shape="rectangle" android:dither="true">
+            <corners android:radius="@dimen/bg_card_radius"/>
+            <solid android:color="@android:color/darker_gray"/>
+        </shape>
+    </item>
+</layer-list>

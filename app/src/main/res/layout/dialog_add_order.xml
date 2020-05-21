@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dialog_margin"
+    android:background="@color/colorBack"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/DialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center_horizontal"
+        android:text="@string/dialog_add_order_title"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/dialog_add_order_edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入电影名称" />
+
+    <RelativeLayout
+        android:id="@+id/dialog_add_order_layout_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/screen_margin"
+            android:layout_marginLeft="@dimen/screen_margin"
+            android:background="@null"
+            android:gravity="center"
+            android:text="选择观影日期"
+            android:textColor="@color/colorGrayer"
+            android:textSize="@dimen/txt_label_size" />
+
+        <TextView
+            android:id="@+id/dialog_add_order_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:gravity="center"
+            android:textColor="@color/colorSky"
+            android:textSize="@dimen/txt_title_size"
+            tools:text="2020-05-20 00:00:00" />
+
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/dialog_add_order_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/dialog_add_order_edt_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="电影票价"
+        android:hint="请输入票价"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_add_order_btn_qrCode"
+            style="@android:style/ButtonBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_generate_qr" />
+
+        <Button
+            android:id="@+id/dialog_add_order_btn_save"
+            style="@android:style/ButtonBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_generate_save" />
+
+        <Button
+            android:id="@+id/dialog_add_order_btn_cancel"
+            style="@android:style/ButtonBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_generate_cancel" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dialog_margin"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/dialog_add-order_img_qrCode"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

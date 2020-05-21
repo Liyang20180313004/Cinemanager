@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Cinemanager</string>
+    <string name="txt_menu">菜单</string>
+    <string name="text_view_orders">我的订单</string>
+    <string name="txt_add_order">添加订单</string>
+    <string name="txt_view_cinema">查看影院</string>
+    <string name="txt_add_cinema">添加影院</string>
+    <string name="txt_quit">退出</string>
+    <string name="dialog_add_order_title">新订单</string>
+    <string name="txt_generate_qr">生成二维码</string>
+    <string name="txt_generate_save">保存</string>
+    <string name="txt_generate_cancel">取消</string>
+    <string name="txt_no_date">没有数据,请手工添加</string>
+    <string name="dialog_add_cinema_title">新影院</string>
+    <string name="txt_add_cinema_save">保存</string>
+    <string name="txt_add_cinema_cancel">取消</string>
+</resources>
