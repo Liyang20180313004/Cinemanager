@@ -105,18 +105,12 @@
             android:background="@android:color/darker_gray" />
 
         <TextView
-            android:id="@+id/bar_title_tv_quit"
+            android:id="@+id/bar_title_tv_exit"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/txt_quit"
             android:textSize="@dimen/txt_title_size" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/line_height"
-            android:background="@android:color/darker_gray" />
-
 
     </LinearLayout>
 
